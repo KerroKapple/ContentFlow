@@ -43,8 +43,8 @@ else
     BRANCH="${BRANCH:-feat/contentflow-phase1}"
     rm -rf /tmp/contentflow-clone
     git clone --depth 1 -b "$BRANCH" "$REPO_URL" /tmp/contentflow-clone 2>/dev/null
-    cp -r /tmp/contentflow-clone/contentflow/backend /opt/contentflow/backend
-    cp -r /tmp/contentflow-clone/contentflow/deploy /opt/contentflow/deploy
+    cp -r /tmp/contentflow-clone/backend /opt/contentflow/backend
+    cp -r /tmp/contentflow-clone/deploy /opt/contentflow/deploy
     rm -rf /tmp/contentflow-clone
 fi
 echo "  ✓ 代码已就绪"
